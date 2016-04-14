@@ -1,0 +1,217 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	width: 100%;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 150px;
+}
+.logo-wrapper a img{
+   width: 95%;
+}
+.logo-wrapper {
+    float: left;
+    width: 25%;
+}
+.top-right-block{
+	width: 74%;
+
+}
+.top-right-block {
+    float: right;
+    width: 74%;
+}
+.callback-number{
+	font-size: 19px;
+	text-decoration: underline;
+	padding-bottom: 5px;
+}
+.callback-wrapper {
+    padding: 10px 0 10px 10px;
+}
+.callback-link{
+	color: #000;
+    font-size: 11px;
+    padding-left: 25px;
+}
+.phone-icon{
+    background: rgba(0, 0, 0, 0) url("../images/top_phone.png") no-repeat scroll 0 0;
+    display: block;
+    float: left;
+    height: 19px;
+    margin: 3px 13px 0 0;
+    width: 12px;
+}
+/*start component auth*/
+.auth-block .auth-enter{
+	padding:8px 14px;
+}
+.top-auth {
+    line-height: 16px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.top-auth .item {
+    background: #fff0be none repeat scroll 0 0;
+}
+.does-enter, .do-enter {
+    padding: 8px 14px;
+}
+
+.do-enter a:first-child {
+    background: #fff0be none repeat scroll 0 0;
+    border-bottom: medium none;
+    padding: 8px;
+}
+.do-enter a {
+    border-bottom: 1px solid;
+    font-size: 12px;
+    text-decoration: none;
+}
+/*end component auth*/
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+}
+.container .container-wrapper {
+    background: rgba(0, 0, 0, 0) url("../images/bg_body.png") repeat scroll 0 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+.container .corner1 {
+    background: rgba(0, 0, 0, 0) url("../images/corner/1.png") repeat scroll 0 0;
+    height: 91px;
+    position: absolute;
+    right: -94px;
+    top: -1px;
+    width: 264px;
+}
+.container .corner2 {
+    background: rgba(0, 0, 0, 0) url("../images/corner/2.png") repeat scroll 0 0;
+    height: 231px;
+    left: -40px;
+    position: absolute;
+    top: 280px;
+    width: 84px;
+}
+.container .corner3 {
+    background: rgba(0, 0, 0, 0) url("../images/corner/3.png") repeat scroll 0 0;
+    height: 221px;
+    position: absolute;
+    right: -40px;
+    top: 520px;
+    width: 80px;
+}
+.container .corner4 {
+    background: rgba(0, 0, 0, 0) url("../images/img/corner/2.png") repeat scroll 0 0;
+    height: 231px;
+    left: -40px;
+    position: absolute;
+    top: 780px;
+    width: 84px;
+}
+
+.container .corner5 {
+    background: rgba(0, 0, 0, 0) url("../images/img/corner/3.png") repeat scroll 0 0;
+    height: 221px;
+    position: absolute;
+    right: -40px;
+    top: 1020px;
+    width: 80px;
+}
+
+.container .corner6 {
+    background: rgba(0, 0, 0, 0) url("../images/img/corner/2.png") repeat scroll 0 0;
+    height: 231px;
+    left: -40px;
+    position: absolute;
+    top: 1380px;
+    width: 84px;
+}
+.container .corner7 {
+    background: rgba(0, 0, 0, 0) url("/../images/img/corner/3.png") repeat scroll 0 0;
+    height: 221px;
+    position: absolute;
+    right: -40px;
+    top: 1520px;
+    width: 80px;
+}
+.body-wrapper {
+	max-width: 100%;
+    min-width: 320px;
+    overflow: hidden;
+    padding: 0 23px 124px;
+    position: relative;
+}
+.body-wrapper > .container {
+    box-shadow: 0 0 15px #ccc;
+}
+.container{
+	max-width: 1600px;
+    min-width: 950px;
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height: 100px;
+	background: #BFF08E;
+}
