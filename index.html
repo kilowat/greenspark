@@ -8,11 +8,13 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
 </head>
 
 <body>
 
   <div class="body-wrapper">
+    <div class="head_bg"> </div>
     <div class="container">
       <!--start decor element-->
       <div class="corner1"></div>
@@ -111,19 +113,75 @@
             <!--end component search-->          
         </header>
         <!-- .header-->
-        <div class="left-content">
-          <!--start component catalog menu-->
-            <div class="catalog-menu">
-              <h3>каталог</h3>
-              
-            </div>
-            
-          <!--end component catalog menu-->
+        <div class="center-section">
+          <div class="left-content">
+            <!--start component catalog menu-->
+              <div class="catalog-menu">
+                <h3>каталог</h3>
+                  <ul id="nav_list_menu" class="nav_list">
+                    <li class="root-item"><a href="#">Главная</a></li>
+                    <li class="root-item"><a href="#">Новости</a>
+                      <ul>
+                        <li>
+                          <a href="#">Хроника</a>
+                          <ul class="last-item-menu">
+                            <ul>
+                              <li><span class="menu-count">20</span><a href="" title="">Раздел 1</a></li>
+                              <li><span class="menu-count">20</span><a href="" title="">Раздел 2</a></li>
+                              <li><span class="menu-count">20</span><a href="" title="">Раздел 3</a></li>
+                            </ul>
+                            <ul>
+                              <li><span class="menu-count">20</span><a href="" title="">Раздел 1</a></li>
+                              <li><span class="menu-count">20</span><a href="" title="">Раздел 2</a></li>
+                              <li><span class="menu-count">20</span><a href="" title="">Раздел 3</a></li>
+                            </ul>
+                          </ul>
+
+                        </li>
+                        <li><a href="#">Политика</a></li>
+                        <li><a href="#">Спорт</a></li>
+                        <li><a href="#">За рубежом</a></li>
+                      </ul> 
+                    </li>
+                    <li class="root-item"><a href="#">О компании</a>
+                      <ul>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">События</a></li>
+                      </ul> 
+                    </li>
+                    <li class="root-item"><a href="#">Связь с нами</a>
+                      <ul>
+                        <li><a href="#">Написать нам</a></li>
+                        <li><a href="#">Наши контакты</a></li>
+                      </ul>   
+                    </li>
+                </ul>              
+              </div>
+           <script>
+            $(function () {
+              var el = $('#nav_list_menu a');
+              el.click(function() {
+                var checkedElement = $(this).next(),
+                  visibleElement = $('#nav_list_menu .root-item ul:visible');
+                  
+                visibleElement.stop().animate({'height':'toggle'}, 500).parent().removeClass('active');   
+                if((checkedElement.is('ul')) && (!checkedElement.is(':visible'))) {
+                  checkedElement.stop().animate({'height':'toggle'}, 500).parent().addClass('active');
+                  return false;
+                    } 
+                if((checkedElement.is('ul')) && (checkedElement.is(':visible'))) {
+                  return false;
+                }
+              });
+            });
+          </script>   
+            <!--end component catalog menu-->
+          </div>
+          <main class="content">
+            <strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
+          </main>
+          <!-- .content -->
         </div>
-        <main class="content">
-          <strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
-        </main>
-        <!-- .content -->
       </div>
     </div>
   </div>
