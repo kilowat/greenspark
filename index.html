@@ -25,44 +25,89 @@
       <!--end decor element-->
       <div class="container-wrapper">
         <header class="header">
-          <div class="logo-wrapper">
-            <a href="/" title="logo">
-              <img src="../images/logo.jpg" alt="log">
-            </a>
-            <!--start component callback-->
-            <div class="callback-wrapper">
-              <div class="callback-number">
-                <span class="phone-icon"></span> +7 (473) 259-31-61
+          <div class="top-section-wrapper">
+            <div class="logo-wrapper">
+              <a href="/" title="logo">
+                <img src="../images/logo.jpg" alt="log">
+              </a>
+              <!--start component callback-->
+              <div class="callback-wrapper">
+                <div class="callback-number">
+                  <span class="phone-icon"></span> +7 (473) 259-31-61
+                </div>
+                <a href="#" class="callback-link" title="Перезвоните мне">Перезвоните мне</a>
               </div>
-              <a href="#" class="callback-link" title="Перезвоните мне">Перезвоните мне</a>
+              <!--end component callback-->
             </div>
-            <!--end component callback-->
-          </div>
-          <!--start component auth-->
-          <div class="auth_other_block">
-            <div class="top-auth" style="float:right">
-              <div class="item do-enter">
-                <a class="signin" href="/auth/">
-                  <strong>
-                    <span>Войти</span>
-                 </strong>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!--end component auth-->
-          <div class="top-right-block">
-            <!--start component city select-->
-            <div class="city-block">
-              <div class="city-not-select">
-                <div class="city-name-block">
-                  <span class="city-label">Ваш город:</span>
-                  <span class="city-name">Ростов-на-Дону?</span>
+            <!--start component auth-->
+            <div class="auth_other_block">
+              <div class="top-auth" style="float:right">
+                <div class="item do-enter">
+                  <a class="signin" href="/auth/">
+                    <strong>
+                      <span>Войти</span>
+                   </strong>
+                  </a>
                 </div>
               </div>
             </div>
-            <!--end component city select-->
+            <!--end component auth-->
+            <div class="top-right-block">
+              <!--start component city select-->
+              <div class="city-block block-item">
+                <div class="city-not-select">
+                  <div class="city-name-block">
+                    <span class="city-label">Ваш город:</span>
+                    <span class="city-name">Ростов-на-Дону?</span>
+                  </div>
+                  <div class="city-buttons">
+                   <a class="btn btn_yes" href="http://rnd.green-spark.ru/?set_city=14683">Да</a>
+                   <a class="btn btn_other" data-target="#selectCity" data-toggle="modal" href="#">Другой</a> 
+                  </div>
+                </div>
+              </div>
+              <!--end component city select-->
+              
+              <!--start component reviews-top-->
+              <div class="reviews-block block-item">
+                <a href="#" class="reivews-show" title="оставить отзыв">отзывы и предложения</a>
+              </div>
+              <!--end component reviews-top-->
+
+              <!--start component small cart-->
+              <div class="basket-small block-item">
+                <div class="name">
+                <a href="/basket/">Корзина</a>
+                <span class="sum"> Ваша корзина пуста </span>
+                </div>
+              </div>
+              <!--end component small cart-->
+
+              <!--start component price list-->
+              <div class="price-list-block">
+                <a href="#" title="прайс лист">проайс-лист продукции</a>
+                <span class="price-list-last-update">Обновлен 14.04.2016</span>
+              </div>
+              <!--end component price list-->
+            </div>
           </div>
+            <!--start component top menu-->
+            <div class="top-menu-wrapper">
+              <ul class="top-menu"> 
+                <li><a href="/about/">О компании</a></li>      
+                <li><a href="/how/">Как заказать</a></li>      
+                <li><a href="/wholesale/">Оптовым покупателям</a></li>         
+                <li><a href="/vacancy/">Работа в GreenSpark</a></li>      
+                <li><a href="/contacts/">Контактная информация</a></li>
+              </ul>
+            </div>
+            <!--end component top menu-->
+
+            <!--start component search-->
+            <div class="search-block">
+                           
+            </div>
+            <!--end component search-->          
         </header>
         <!-- .header-->
 

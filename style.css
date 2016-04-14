@@ -51,14 +51,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 body {
 	font-family: Arial,Helvetica,sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	width: 100%;
 }
-
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+    background-repeat: repeat-x;
+    border-color: #ccc #ccc #b3b3b3;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
-	height: 150px;
+
+}
+header::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.top-section-wrapper::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.top-section-wrapper {
+    padding-bottom: 30px;
 }
 .logo-wrapper a img{
    width: 95%;
@@ -125,9 +163,191 @@ body {
 }
 /*end component auth*/
 
+/*start component select city*/
+.city-block {
+    float: left;
+    width: 38%;
+}
+.city-not-select {
+ 	background: #ededed none repeat scroll 0 0;
+    box-shadow: 1px 1px 4px 0 rgba(50, 50, 50, 0.35);
+    display: inline-block;
+    min-width: 215px;
+    padding: 8px;
+}
+.city-name-block{
+	color: #838382;
+    padding: 0 0 15px;
+}
+.city-label {
+    font-size: 12px;
+}
+.city-name{
+	color: #e08b47;
+    display: inline;
+    float: none;
+    margin: 0 0 0 3px;
+}
+.city-block .city-buttons .btn_yes {
+    background: #090 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    color: #fff;
+    margin: 0 5px 0 0;
+    width: 72px;
+}
+.city-block .city-buttons .btn_other {
+    background: #dcdcdc none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    color: #838382;
+    width: 72px;
+}
+/*end component select city*/
+
+/*start component reviews-top*/
+.reviews-block a {
+  	 color: #e08b47;
+    display: inline-block;
+    padding-left: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 65%;
+    font-size: 12px;
+     line-height: 1.3;
+}
+.reviews-block {
+    position: relative;
+    float: left;
+}
+
+.reviews-block::before {
+ 	background: rgba(0, 0, 0, 0) url("../images/review_icon.png") repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 26px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 31px;
+}
+.reviews-block {
+    float: left;
+    position: relative;
+    width: 15%;
+}
+/*end component review-top*/
+
+/*start component basket-small*/
+.basket-small .name .sum {
+    color: #a2a2a1;
+}
+.basket-small.block-item {
+    float: left;
+    width: 20%;
+    position: relative;
+    padding-left: 50px;
+     line-height: 1.3;
+}
+.basket-small.block-item::before {
+ 	background: rgba(0, 0, 0, 0) url("../images/basket_icon.png") repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 38px;
+}
+.basket-small .name > a {
+ 	color: #e08b47;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*end component basket-small*/
+
+/*start component price list*/
+.price-list-block {
+    float: left;
+    width: 15%;
+    line-height: 1.3;
+    position: relative;
+    padding-left: 45px;
+}
+.price-list-block a{
+	color: #e08b47;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.price-list-block .price-list-last-update{
+	color:#a2a2a1;
+}
+.price-list-block::before {
+ 	background: rgba(0, 0, 0, 0) url("../images/price_icon.png") repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 32px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 32px;
+}
+
+/*end component price list*/
+
+/*start component top menu*/
+.top-menu-wrapper {
+    float: right;
+    margin:0 10px 0 0;
+    padding-bottom: 10px;
+}
+.top-menu-wrapper .top-menu li {
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+    position: relative;
+}
+.top-menu-wrapper .top-menu li:after{
+ 	background: #5d5d5d none repeat scroll 0 0;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 2px;
+    left: -12px;
+    position: absolute;
+    top: 5px;
+    width: 4px;
+    height: 4px;
+}
+.top-menu-wrapper .top-menu li:first-child:after{
+	display: none;
+}
+.top-menu-wrapper .top-menu li a {
+    border-bottom: 1px solid;
+    color: #5d5d5d;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+/*end component top menu*/
+
+/*start component search*/
+.search-block {
+    background: rgba(0, 0, 0, 0) url("../images/bg_search.png") repeat scroll 0 0;
+    box-shadow: 0 2px 3px #ddd;
+    height: 47px;
+    padding: 8px 0 0;
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+/*end component search*/
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
+	 clear: both;
 }
 .container .container-wrapper {
     background: rgba(0, 0, 0, 0) url("../images/bg_body.png") repeat scroll 0 0;
