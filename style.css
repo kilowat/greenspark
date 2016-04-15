@@ -718,24 +718,115 @@ header::after {
     box-shadow: 0 0 15px #ccc;
 }
 .container{
-  max-width: 1600px;
+    max-width: 1600px;
     min-width: 950px;
 }
 
+/*start component bottom menu*/
+.bottom-menu ul li {
+    float: left;
+    margin: 10px 0 0;
+    padding: 0;
+    width: 50%;
+}.bottom-menu-wrapper.footer-cell {
+    float: right;
+    width: 25%;
+}
+.bottom-menu-wrapper.footer-cell a{
+    color: #fff;
+}
+/*end component bottom menu*/
 
 
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-  min-height: 100px;
-  padding-left: 23px;
-  padding-right: 23px;
-}
 
+}
+.footer-content{
+    min-height: 100px;
+     padding-left: 23px;
+    padding-right: 23px;
+}
 .footer-wrapper {
     background: rgba(0, 0, 0, 0) url("../images/footer-bg.png") repeat scroll 0 0;
 }
 .footer-content .footer-cell {
     display: inline-block;
     vertical-align: middle;
+}
+.footer .contact-phone {
+    border-right: 2px solid #fff;
+    color: #fff;
+    font-size: 26px;
+    padding-right: 15px;
+}
+.footer .contact-block.footer-cell > div {
+    display: inline-block;
+    margin-top: 15px;
+     padding-left: 45px;
+}
+.footer .contact-adress{
+    color: #fff;
+    line-height: 1.4;
+    position: relative;
+    top: 3px;
+}
+.footer .social-icons li {
+    display: inline-block;
+}
+.footer .social-icons li a{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer .social-icons {
+    margin-top: 40px;
+}
+.footer .soc-icon-block.footer-cell {
+    text-align: right;
+    width: 20%;
+}
+.footer .vk-icon{
+    background-image:url(../images/vk_bottom_icon.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 22px;
+    display: block;
+}
+.footer .fb-icon{
+    background-image:url(../images/facebook_bottom_icon.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 22px;
+    display: block;
+}
+.footer .tw-icon{
+    background-image:url(../images/twitter_bottom_icon.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 22px;
+    display: block;
+}
+footer .copyright {
+    color: #000;
+    padding: 10px 23px 30px;
+}
+
+footer .copyright .copy_text {
+    float: left;
+
+}
+footer .copyright {
+    color: #000;
+}
+
+footer .copyright .site_creator {
+    float: right;
+}
+footer .copyright .site_creator a {
+    text-decoration: none;
+}
+.site_creator a {
+    border-bottom: 1px solid;
+    text-decoration: none;
 }
