@@ -217,36 +217,52 @@
           </div>
           <main class="content">
             <!--start component main slider-->
-              <div class="flexslider">
-                <ul class="slides">
-                  <li>
-                    slide2
-                  </li>
-                  <li>
-                    slide3
-                  </li>
-                  <li>
-                    slide4
-                  </li>
-                  <li>
-                    slide5
-                  </li>
-                </ul>
-              </div>
-              <div class="custom-navigation">
-                <a href="#" class="flex-prev">Prev</a>
-                <div class="custom-controls-container"></div>
-                <a href="#" class="flex-next">Next</a>
-              </div>
-              <script>
-              $(window).load(function() {
-                $('.flexslider').flexslider({
-                  animation: "slide",
-                  controlsContainer: $(".custom-controls-container"),
-                  customDirectionNav: $(".custom-navigation a")
+              <div class="main-slider">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <!--foreach $arResult-->
+                    <li>
+                      <div class="slide-wrapper">
+                        <div class="slide-left">
+                          <h2 class="slide-name">
+                            <a href="" title="#">Клавиатура для ноутбука "Acer" Aspire 5810T</a>
+                          </h2>
+                          <div class="slide-text">
+                            Совместимые модели: 5410T / 5820TG / 5536 / 5738 / 5739 / 5542 / 5551 / 5553G / 5741G / 5745 / 7540G / 7551G / 7736ZG / 7745G / 8935G / E640G / E730 
+                          </div>
+                          <div class="slide-price">530руб.</div>
+                          <div class="slide-see-detail">
+                            <a href="#" title="#">подробнее</a>
+                          </div>
+                          <div class="slide-soc-icons">
+                            социальные иконки
+                          </div>
+                        </div>
+                        <div class="slide-right">
+                          <div class="slide-image">
+                          <a href="" title=""><img src="../images/5810t-_1_.jpg" alt="#"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--end foreach-->
+                  </ul>
+                </div>
+                <div class="custom-navigation">
+                  <a href="#" class="flex-prev">Prev</a>
+                  <div class="custom-controls-container"></div>
+                  <a href="#" class="flex-next">Next</a>
+                </div>
+                <script>
+                $(window).load(function() {
+                  $('.flexslider').flexslider({
+                    animation: "slide",
+                    controlsContainer: $(".custom-controls-container"),
+                    customDirectionNav: $(".custom-navigation a")
+                  });
                 });
-              });
-            </script>
+              </script>
+              </div>
             <!--end component main slider-->
           </main>
           <!-- .content -->

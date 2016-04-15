@@ -48,7 +48,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
 }
 
-
+a {
+    color: #3ca733;
+    text-decoration: underline;
+}
 body {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 12px;
@@ -627,7 +630,7 @@ header::after {
 -----------------------------------------------------------------------------*/
 .content {
      float: left;
-     width: 73%;
+     width: 74%;
 }
 
 .left-content {
@@ -738,6 +741,41 @@ header::after {
 /*end component bottom menu*/
 
 
+/*start component main slider*/
+.main-slider{
+    background-image: url(../images/bg_slide_index.png);
+}
+.main-slider .slide-left {
+    float: left;
+    width: 60%;
+}
+.main-slider .slide-right {
+    float: left;
+    width: 30%;
+}
+.main-slider .slide-wrapper::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.main-slider .slide-name {
+    color: #000;
+    font-family: Conv_Intro,Tahoma;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 36px 20px 12px 0;
+    text-transform: uppercase;
+}
+.main-slider .slide-image {
+    max-height: 340px;
+    padding: 36px 10px 0 0;
+}
+.main-slider .slide-image img {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+/*end component main slider*/
+
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
@@ -759,12 +797,24 @@ header::after {
     border-right: 2px solid #fff;
     color: #fff;
     font-size: 26px;
-    padding-right: 15px;
+    padding-right: 20px;
+    position: relative;
+}
+.footer .contact-phone:after{
+    display: block;
+    content: "";
+    height: 19px;
+    width: 12px;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    background-image:url(../images/bottom_phone.png);
+    background-repeat: no-repeat;
 }
 .footer .contact-block.footer-cell > div {
     display: inline-block;
     margin-top: 15px;
-     padding-left: 45px;
+     padding-left: 30px;
 }
 .footer .contact-adress{
     color: #fff;
