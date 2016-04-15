@@ -747,11 +747,12 @@ header::after {
 }
 .main-slider .slide-left {
     float: left;
-    width: 60%;
+    width: 42.5%;
+    margin-left: 6.5%;
 }
 .main-slider .slide-right {
     float: left;
-    width: 30%;
+    width: 48%;
 }
 .main-slider .slide-wrapper::after {
     clear: both;
@@ -767,12 +768,112 @@ header::after {
     text-transform: uppercase;
 }
 .main-slider .slide-image {
+    margin-left: 13%;
     max-height: 340px;
     padding: 36px 10px 0 0;
+    width: 80%;
 }
 .main-slider .slide-image img {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
+.main-slider .slide-text{
+    color: #5f5f5f;
+    padding: 0 20px 20px 0;
+    line-height: 1.7em;
+}
+.main-slider .slide-price{
+    color: #009900;
+    font-family: Conv_Intro,Tahoma;
+    font-size: 30px;
+    line-height: 18px;
+    margin: 0 0 0 16px;
+}
+.main-slider .slide-price span{
+    font-size: 12px;
+}
+.main-slider .slide-see-detail a{
+    margin-top: 15px;
+     border-bottom-colors: none;
+     border-left-colors: none;
+    border-right-colors: none;
+    border-top-colors: none;
+    background: #009900 none repeat scroll 0 0;
+    border-color: #fff;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: medium none;
+    overflow: visible;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-slider .flex-prev {
+    background: rgba(0, 0, 0, 0) url("/images/bg_direction_nav_gsm.png") no-repeat scroll 0 0;
+    height: 18px;
+    width: 18px;
+    display: block;
+    float: left;
+    bottom:35px;
+    position: relative;
+}
+.main-slider .flex-next {
+    background: rgba(0, 0, 0, 0) url("/images/bg_direction_nav_gsm.png") no-repeat scroll 100% 0;
+    height: 18px;
+    width: 18px;
+    display: block;
+    float: left;
+    margin-left: 15px;
+    bottom:35px;
+    position: relative;
+}
+
+.main-slider .custom-navigation {
+    bottom: 15px;
+    margin-left: 20px;
+    width: 65px;
+}
+.main-slider .slide-soc-icons {
+    margin-top: 20px;
+}
+.main-slider .slide-wrapper{
+    padding-bottom: 52px;
+}
+.main-slider .recomendation{
+    border: 2px solid #009900;
+    border-radius: 4px;
+    color: #009900;
+    display: block;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 6px auto 0;
+    padding: 0 16px;
+    text-transform: uppercase;
+    width: 93px;
+}
+.main-slider .flex-control-paging {
+    border: 2px solid #009900;
+    border-radius: 4px;
+    bottom: 30px;
+    float: right;
+    height: 18px;
+    padding: 0 2px;
+    position: absolute;
+    right: 20px;
+    width: auto;
+}
+
+.main-slider .flex-control-nav li a {
+    background: rgba(0, 0, 0, 0) url("../images/slider_nav.png") repeat scroll 0 0;
+    height: 15px;
+    width: 6px;
+}
+
 /*end component main slider*/
 
 

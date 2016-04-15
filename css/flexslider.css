@@ -73,7 +73,7 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 60px;
+  padding: 0 0 60px;
   position: relative;
   zoom: 1;
   -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -195,7 +195,7 @@ html[xmlns] .flexslider .slides {
   text-align: center;
 }
 .flex-control-nav li {
-  margin: 0 6px;
+   margin: 1px 1px 0;
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -217,13 +217,16 @@ html[xmlns] .flexslider .slides {
   border-radius: 20px;
 }
 .flex-control-paging li a:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0) url("../images/slider_nav_active.png") repeat scroll 0 0;
+    height: 15px;
+    width: 6px;
+    
 }
 .flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(0, 0, 0, 0.9);
-  cursor: default;
+  background: rgba(0, 0, 0, 0) url("../images/slider_nav_active.png") repeat scroll 0 0;
+    height: 15px;
+    width: 6px;
+
 }
 .flex-control-thumbs {
   margin: 5px 0 0;
