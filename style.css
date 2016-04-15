@@ -367,6 +367,9 @@ header::after {
     width: 100%;
     clear: both;
      margin-bottom: 10px;
+     padding-left: 12px;
+     padding-right: 12px;
+     margin-left: -12px;
 }
 .search-select .jq-selectbox__select{
    background: #dce7e3 none repeat scroll 0 0;
@@ -436,6 +439,30 @@ header::after {
 .search-inputs .jq-selectbox__dropdown{
     width: 87%;
 }
+
+.search-block::before {
+    bottom: -13px;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12px 12px 0;
+    border-color: transparent #ccc transparent transparent;
+}
+
+.search-block::after {
+    bottom: -13px;
+    content: "";
+    right: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 0 0;
+    border-color: #ccc transparent transparent transparent;
+}
 /*end component search*/
 
 /*start component catalog left menu*/
@@ -498,6 +525,10 @@ header::after {
     vertical-align: middle;
     width: 355px;
 
+}
+.catalog-menu .nav_list .root-item>ul>li>a:hover, .catalog-menu .nav_list .root-item>ul>li>a.selected{
+    color: #fff;
+    background: #017f01 none repeat scroll 0 0; 
 }
 .catalog-menu .nav_list .root-item>ul{
     margin-left: 10px;
@@ -615,7 +646,6 @@ header::after {
 }
 .container .container-wrapper {
     background: rgba(0, 0, 0, 0) url("../images/bg_body.png") repeat scroll 0 0;
-    padding-bottom: 20px;
     position: relative;
 }
 .container .corner1 {
@@ -681,7 +711,7 @@ header::after {
   max-width: 100%;
     min-width: 320px;
     overflow: hidden;
-    padding: 0 23px 124px;
+    padding: 0 23px 0px;
     position: relative;
 }
 .body-wrapper > .container {
@@ -697,6 +727,15 @@ header::after {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-  height: 100px;
-  background: #BFF08E;
+  min-height: 100px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.footer-wrapper {
+    background: rgba(0, 0, 0, 0) url("../images/footer-bg.png") repeat scroll 0 0;
+}
+.footer-content .footer-cell {
+    display: inline-block;
+    vertical-align: middle;
 }
