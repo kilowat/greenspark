@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 20px;
 }
 ol, ul {
   list-style: none;
@@ -83,6 +83,19 @@ body {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     vertical-align: middle;
 }
+
+.product-price-1 {
+    color: #009900;
+    float: right;
+    font-family: Conv_Intro,Tahoma;
+    font-size: 30px;
+    margin: 0 0 0 5px;
+}
+
+.product-price-1 span {
+    display: block;
+    font-size: 12px;
+}
 .div-table{
     display: table;
 }
@@ -91,6 +104,26 @@ body {
 }
 .div-cell {
     display: table-cell;
+}
+
+.good-count .label {
+    color: #8c8c8c;
+    float: left;
+    height: 20px;
+    line-height: 11px;
+    margin: 0 0 0 10px;
+}
+
+.good-count .icon.count1 {
+    background: rgba(0, 0, 0, 0) url("../images/nalichee.png") no-repeat scroll -40px 2px;
+}
+.good-count .icon {
+    float: left;
+    height: 20px;
+    width: 38px;
+}
+.good-count {
+    height: 20px;
 }
 /* Header
 -----------------------------------------------------------------------------*/
@@ -471,6 +504,7 @@ header::after {
 /*start component catalog left menu*/
 .catalog-menu{
     margin-left: 10px;
+    padding-bottom: 10px;
 }
 .catalog-menu h3 {
     text-align: center;
@@ -744,6 +778,7 @@ header::after {
 /*start component main slider*/
 .main-slider{
     background-image: url(../images/bg_slide_index.png);
+    position: relative;
 }
 .main-slider .slide-left {
     float: left;
@@ -837,6 +872,8 @@ header::after {
     bottom: 15px;
     margin-left: 20px;
     width: 65px;
+    position: absolute;
+    left: 0px;
 }
 .main-slider .slide-soc-icons {
     margin-top: 20px;
@@ -877,6 +914,189 @@ header::after {
 /*end component main slider*/
 
 
+/*start component promo new product slider*/
+.new-product-slider .product-cell{
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: relative;
+    height: 340px;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.new-product-slider .product-name a {
+    color: #41653f;
+}
+.new-product-slider .product-name{
+    height: 40px;
+    margin: 0 0 8px;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.7em;
+}
+#new-product{
+    margin-left: -1%;
+    width: 102%;
+}
+.new-product-slider .slick-slide img {
+    display: inline;
+}
+
+.new-product-slider .new-product-img {
+    display: block;
+    text-align: center;
+    padding: 0 0 8px;
+}
+.component-head{
+    font-family: Conv_Intro;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, 0) url("../images/footer-bg.png") repeat scroll 0 0;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 12px 8px 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 #000;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.product-buy-count{
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #090;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 20px;
+    border-radius: 3px;
+    background: #fff none repeat scroll 0 0;
+    min-height: 15px;
+    padding: 10px 9px;
+}
+.addtocart{
+    padding: 0 6px;
+    margin: 0 0 0 18px;
+    border-bottom-colors: none;
+    border-left-colors: none;
+    border-right-colors: none;
+    border-top-colors: none;
+    background: #090 none repeat scroll 0 0;
+    border-color: #fff;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    color: #fff;
+    cursor: pointer;
+    height: 36px;
+    line-height: 36px;
+    outline: 0 none;
+    overflow: visible;
+    text-transform: uppercase;
+}
+.new-product-slider .buy-row-product {
+    clear: both;
+}
+.buy-row-product{
+    padding-top: 15px;
+}
+.buy-row-product::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.store-count-row {
+    margin-top: 20px;
+}
+.new-product-slider .slick-next {
+    position: absolute;
+    right: 20px;
+    top: -5px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0) url("/images/bg_direction_nav_gsm.png") no-repeat scroll 100% 0;
+    display: block;
+    height: 18px;
+    margin-left: 15px;
+    width: 18px;
+}
+.new-product-slider .slick-prev {
+    position: absolute;
+    left: 25px;
+    top: -5px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0) url("/images/bg_direction_nav_gsm.png") no-repeat scroll 0 0;
+    display: block;
+    float: left;
+    height: 18px;
+    width: 18px;
+}
+/*end component promo new product slider*/
+
+/*start component news list main page*/
+
+.news-list-main-page .title {
+    background: #dad8d9 none repeat scroll 0 0;
+}
+.news-list-main-page .title {
+    margin-left: -12px;
+    padding-left: 12px;
+    position: relative;
+    width: 100%;
+}
+.news-list-main-page .title:before{
+    border-color: transparent #ccc transparent transparent;
+    border-style: solid;
+    border-width: 0 12px 12px 0;
+    bottom: -11px;
+    content: "";
+    height: 0;
+    left: 0px;
+    position: absolute;
+    width: 0;  
+}
+.news-list-main-page .title {
+    color: #009900;
+    font-family: Conv_Intro;
+    font-size: 22px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+.news-list-main-page .item {
+    background: rgba(0, 0, 0, 0) url("../images/mark_news.png") no-repeat scroll 0 8px;
+    margin-top: 20px;
+    padding: 0 0 0 15px;
+}
+
+.news-list-main-page .item .date {
+    font-weight: bold;
+}  
+
+.news-list-main-page .item .devide {
+    background: #e3e3e3 none repeat scroll 0 0;
+    height: 1px;
+    margin-top: 6px;
+}
+.news-list-main-page .all {
+    margin: 20px 0;
+    padding-left: 10px;
+}    
+/*end component news list main page*/
+.pr-block img {
+    width: 100%;
+}
+
+.pr-block {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {

@@ -10,9 +10,12 @@
   <link href="style.css" rel="stylesheet">
   <link href="../css/jquery.formstyler.css" rel="stylesheet">
   <link href="../css/flexslider.css" rel="stylesheet">
+  <link href="../css/slick.css" rel="stylesheet">
+  <link href="../css/slick-theme.css" rel="stylesheet">
   <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
   <script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
   <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="../js/slick.js"></script>
   <script type="text/javascript" src="../js/app.js"></script>
 </head>
 
@@ -134,9 +137,9 @@
                   </div>
                 </div>
               </div>          
-            </div>
             <!--end component search-->          
-        </header>
+          </header>
+        </div>
         <!-- .header-->
         <div class="center-section container-wrapper">
           <div class="left-content">
@@ -214,6 +217,46 @@
             });
           </script>   
             <!--end component catalog menu-->
+            
+            <!--start promo block-->
+              <div class="pr-block">
+                <a href="" title=""><img src="../images/2016-13.jpg" alt=""></a>
+              </div>
+              <div class="pr-block">
+                <a href="" title=""><img src="../images/ip-cam-banner.jpg" alt=""></a>
+              </div>
+            <!--end promo block-->
+
+            <!--start component news list main page-->
+            <div class="news-list-main-page">
+              <div class="title">
+                новости
+              </div>
+              <!--foreach $arResult-->
+                <div class="item">
+                  <div class="date">
+                    <a href="/news/postuplenie_ot_7_aprelya_2016_goda_voronezh/">                           Поступление от 7 апреля 2016 года</a>
+                  </div>
+                  <div class="text"><b>Сообщаем Вам о новом поступлении товаров!</b><br>
+                Расширился и обновился ассортимент запасных частей для ремонта сотовых&nbsp;телефонов. <br>
+                Поступили: спрей-очиститель FLUX-OFF (Solins) 400мл, термовоздушная паяльная станция Lukey 852D+, дисплеи для Asus Zenfone 5 (A501CG) + тачскрин, дисплеи для Explay Hit (30pin) 7'' (163x97мм), дисплей для iPhone 4 + тачскрин белый с рамкой AAA, дисплеи для iPhone 4S + тачскрин белый с рамкой AAA, дисплеи для iPhone 4S + тачскрин черный с рамкой AAA, дисплеи для iPhone 5 + тачскрин черный/белый с рамкой AAA/HQ, дисплеи для iPhone 5C + тачскрин черный с рамкой AAA/HQ, дисплеи для iPhone 5S + тачскрин черный/белый с рамкой HQ.<br>
+                <b>Подробности Вы сможете узнать у наших консультантов.</b></div>
+                <div class="devide"></div>
+                </div>
+                <div class="item">
+                  <div class="date">
+                    <a href="/news/postuplenie_ot_7_aprelya_2016_goda_voronezh/">                           Поступление от 7 апреля 2016 года</a>
+                  </div>
+                  <div class="text"><b>Сообщаем Вам о новом поступлении товаров!</b><br>
+                Расширился и обновился ассортимент запасных частей для ремонта сотовых&nbsp;телефонов. <br>
+                Поступили: спрей-очиститель FLUX-OFF (Solins) 400мл, термовоздушная паяльная станция Lukey 852D+, дисплеи для Asus Zenfone 5 (A501CG) + тачскрин, дисплеи для Explay Hit (30pin) 7'' (163x97мм), дисплей для iPhone 4 + тачскрин белый с рамкой AAA, дисплеи для iPhone 4S + тачскрин белый с рамкой AAA, дисплеи для iPhone 4S + тачскрин черный с рамкой AAA, дисплеи для iPhone 5 + тачскрин черный/белый с рамкой AAA/HQ, дисплеи для iPhone 5C + тачскрин черный с рамкой AAA/HQ, дисплеи для iPhone 5S + тачскрин черный/белый с рамкой HQ.<br>
+                <b>Подробности Вы сможете узнать у наших консультантов.</b></div>
+                <div class="devide"></div>
+              </div>
+              <!--end foreach-->
+              <div class="all"><a href="/news/">Все новости</a></div>
+            </div>
+            <!--end component news list main page-->
           </div>
           <main class="content">
             <!--start component main slider-->
@@ -276,26 +319,177 @@
                 </div>
                 <div class="custom-navigation">
                   <a href="#" class="flex-prev"></a>
-                  <div class="custom-controls-container"></div>
                   <a href="#" class="flex-next"></a>
                 </div>
+                <div class="custom-controls-container"></div>
                 <script>
                 $(window).load(function() {
                   $('.flexslider').flexslider({
                     animation: "slide",
-                    controlsContainer: $(".custom-controls-container"),
-                    customDirectionNav: $(".custom-navigation a")
+                    controlsContainer: $(".main-slider .custom-controls-container"),
+                    customDirectionNav: $(".main-slider .custom-navigation a")
                   });
                 });
               </script>
-              </div>
+            
+            </div>
             <!--end component main slider-->
+
+            <!--start component promo new product slider-->
+            <div class="new-product-slider">
+              <h2 class="component-head">Новинки</h2>
+                <div class="slides" id="new-product">
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                $('#new-product').slick({
+                  dots: true,
+                  infinite: false,
+                  speed: 300,
+                  slidesToShow: 5,
+                  slidesToScroll: 5,
+                  responsive: [
+                    {
+                      breakpoint: 1024,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                      }
+                    },
+                    {
+                      breakpoint: 600,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                  ]
+                });
+                </script>
+              </div>
+            <!--end component promo new product slider-->
           </main>
           <!-- .content -->
         </div>
       </div>
     </div>
-  </div>
+
   <!-- .wrapper -->
     <footer class="footer">
       <div class="footer-wrapper">
