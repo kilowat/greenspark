@@ -7,11 +7,14 @@
   <title></title>
   <meta name="keywords" content="" />
   <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="style.css" rel="stylesheet">
   <link href="../css/jquery.formstyler.css" rel="stylesheet">
   <link href="../css/flexslider.css" rel="stylesheet">
   <link href="../css/slick.css" rel="stylesheet">
   <link href="../css/slick-theme.css" rel="stylesheet">
+  <!--<link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/bootstrap-theme.css" rel="stylesheet">-->
   <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
   <script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
   <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
@@ -38,8 +41,12 @@
           <div class="top-section-wrapper">
             <div class="logo-wrapper">
               <a href="/" title="logo">
-                <img src="../images/logo.jpg" alt="log">
+                <img src="../images/logo.png" alt="log">
               </a>
+              <div class="slogan">
+                Оборудование, инструменты, запчасти<br>
+                для ремонта сотовых телефонов
+              </div>
               <!--start component callback-->
               <div class="callback-wrapper">
                 <div class="callback-number">
@@ -75,6 +82,28 @@
                    <a class="btn btn_other" data-target="#selectCity" data-toggle="modal" href="#">Другой</a> 
                   </div>
                 </div>
+
+                <!--if city selected-->
+                <div class="span6 select_city block_item">
+                  <div class="city_name">
+                    <div class="icon"></div>
+                    <div class="name">
+                      <a data-target="#selectCity" data-toggle="modal" class="city" href="#">Пермь<span class="arrow"></span></a>
+                      <span class="address">ул. Механошина, 14</span>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="job_time">
+                    <span class="job_name">
+                       Режим работы
+                    </span>
+                    <span class="job_val">
+                       ежедневно с 10:00 до 19:00</span>
+                  </div>
+                </div>
+
+                <!--endif-->
+
               </div>
               <!--end component city select-->
               
@@ -95,7 +124,7 @@
 
               <!--start component price list-->
               <div class="price-list-block">
-                <a href="#" title="прайс лист">проайс-лист продукции</a>
+                <a href="#" title="прайс лист">прайс-лист продукции</a>
                 <span class="price-list-last-update">Обновлен 14.04.2016</span>
               </div>
               <!--end component price list-->
@@ -118,6 +147,47 @@
               <div class="search-inputs">
                 <div class="div-table">
                     <div class="div-row">
+                      <div class="div-cell-input div-cell cat-menu-mobile">
+                        <button class="cat-menu-bt btn btn-success">каталог <i class="icon-list icon-white"></i></button>
+                        <!--start component category menu mobile-->
+                        <div class="catalog-menu-mobile">
+                          <div class="catalog-menu">
+                              <ul id="nav_list_menu" class="nav_list">
+                                <li class="root-item"><a href="#">Главная</a></li>
+                                <li class="root-item"><a href="#">Новости</a>
+                                  <ul>
+                                    <li>
+                                      <a href="#">Хроника</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Политика</a>
+                                      </li>
+                                    <li><a href="#">Спорт</a></li>
+                                    <li><a href="#">За рубежом</a></li>
+                                  </ul> 
+                                </li>
+                                <li class="root-item"><a href="#">О компании</a>
+                                  <ul>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">События</a></li>
+                                  </ul> 
+                                </li>
+                                <li class="root-item"><a href="#">Связь с нами</a>
+                                  <ul>
+                                    <li><a href="#">Написать нам</a></li>
+                                    <li><a href="#">Наши контакты</a></li>
+                                  </ul>   
+                                </li>
+                            </ul>              
+                          </div> 
+                        </div>  
+                        <script>
+                        $('.cat-menu-bt').click(function(){
+                          $('.catalog-menu-mobile .catalog-menu').toggle();
+                        });
+                        </script>                       
+                        <!--end component category menu mobile-->
+                      </div>
                       <div class="div-cell-input div-cell">
                         <select class="search-select">
                           <option>Все разделы</option>
@@ -130,8 +200,12 @@
                         </select>
                       </div>
                       <div class="div-cell-input div-cell search-wrapper-btn">
-                        <input class="search-input" type="text" placeholder="Поиск товаров...">
-                        <input class="search-btn" type="submit" value="найти">
+                        <div class="div-table">
+                          <div class="div-row">
+                            <div class="div-cell search-text-input"><input class="search-input" type="text" placeholder="Поиск товаров..."></div>
+                            <div class="div-cell search-button"><input class="search-btn" type="submit" value="найти"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -326,10 +400,12 @@
                 $(window).load(function() {
                   $('.flexslider').flexslider({
                     animation: "slide",
+                     animationLoop: false,
                     controlsContainer: $(".main-slider .custom-controls-container"),
                     customDirectionNav: $(".main-slider .custom-navigation a")
                   });
                 });
+
               </script>
             
             </div>
@@ -339,6 +415,7 @@
             <div class="new-product-slider">
               <h2 class="component-head">Новинки</h2>
                 <div class="slides" id="new-product">
+                  <!--foreach $arResult-->
                   <div class="product-cell">
                     <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
                     <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
@@ -444,6 +521,7 @@
                        </div>
                     </div>
                   </div>
+                  <!--end foreach-->
                 </div>
                 <script>
                 $('#new-product').slick({
@@ -454,27 +532,36 @@
                   slidesToScroll: 5,
                   responsive: [
                     {
-                      breakpoint: 1024,
+                      breakpoint: 1550,
                       settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
                         infinite: true,
                         dots: true
                       }
                     },
                     {
-                      breakpoint: 600,
+                      breakpoint: 1270,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                      }
+                    },
+                    {
+                      breakpoint: 962,
                       settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2
-                      }
+                      },
+
                     },
                     {
                       breakpoint: 480,
                       settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
-                      }
+                      },
+
                     }
                     // You can unslick at a given breakpoint now by adding:
                     // settings: "unslick"
@@ -484,6 +571,163 @@
                 </script>
               </div>
             <!--end component promo new product slider-->
+
+            <!--start component hit product-->
+            <div class="hit-product">
+              <h2 class="component-head">Хиты продаж</h2>
+                <div class="product-items" id="hit-product">
+                  <!--foreach $arResult-->
+                  <div class="product-cell new-ico">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="product-cell">
+                    <a href="" title="" class="new-product-img"><img src="../images/cody-cd_7810a.jpg" alt=""></a>
+                    <div class="product-name"><a href="" title="" >Ультразвуковая ванна "Codyson" CD-7810A</a></div>
+                    <div class="proudct-price product-price-1">4400<br><span>руб.</span></div>
+                    <div class="buy-row-product">
+                      <input class="product-buy-count" type="text" value="1">
+                      <button class="addtocart">в корзину</button>
+                    </div>
+                    <div class="store-count-row">
+                      <div class="good-count">
+                        <div class="icon count1"></div>
+                          <div class="label">- торопитесь,<br>осталось меньше 10-ти</div>
+                       </div>
+                    </div>
+                  </div>
+                  <!--end foreach-->
+                </div>
+              <script>
+                $('#hit-product').slick({
+                  touchMove:false,
+                  swipe:false,
+                  arrows:false,
+                  autoplay:false,
+                  dots: false,
+                  infinite: false,
+                  speed: 300,
+                  slidesToShow: 5,
+                  slidesToScroll: 5,
+                  responsive: [
+                    {
+                      breakpoint: 1550,
+                      settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                      }
+                    },
+                    {
+                      breakpoint: 1270,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                      }
+                    },
+                    {
+                      breakpoint: 962,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                      },
+
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      },
+
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                  ]
+                });
+                </script>
+              </div>            
+            <!--end component hit product-->
+
+            <!--start about text-->
+              <div class="fs15">
+                <p>
+              Компания GreenSpark на протяжении 12 лет является одним из крупнейших на российском рынке поставщиком комплектующих и также оборудования и инструментов для ремонта сотовых телефонов и других электронных устройств.
+                </p>
+                <p>
+                  Наша продукция соответствует предъявляемым критериям качества и, в совокупности с широким ассортиментом, Вы всегда сможете сделать правильный выбор и приобрести необходимый Вам товар.
+                </p>
+                <p>
+                  Мы рады, что именно Вы &mdash; наш клиент!
+                </p><br>
+                <ul class="span8 plus" style="float:left">
+                  <li> Широкий ассортимент</li>
+                  <li> Регулярные поступления</li>
+                  <li> Новые позиции в&nbsp;каждой поставке</li>
+                </ul>
+                <ul class="span8 plus" style="float:left;padding-left:20%;display:inline-block">
+                  <li> Индивидуальный подход к&nbsp;клиенту</li>
+                  <li> Гибкая система скидок</li>
+                  <li> Гарантийные обязательства</li>
+                </ul>
+              </div>
+            <!--end about text-->
           </main>
           <!-- .content -->
         </div>
@@ -530,7 +774,7 @@
           </div>
         </div>
       </div>
-        <div class="copyright">
+        <div class="copyright container">
           <div class="copy_text">
               &copy; 2003 &mdash; 2016 «GSM-Service», «GreenSpark» Копирование материалов сайта &mdash; <span class="red-it">запрещено</span>.
           </div>
