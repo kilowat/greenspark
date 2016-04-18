@@ -235,7 +235,7 @@ header .slogan {
 }
 .top-auth {
     line-height: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -274,7 +274,7 @@ header .slogan {
     width: 38%;
 }
 .city-not-select {
-    margin-top: -25px;
+    margin-top: 0px;
     text-align: left;
     background: #ededed none repeat scroll 0 0;
     box-shadow: 1px 1px 4px 0 rgba(50, 50, 50, 0.35);
@@ -597,7 +597,7 @@ header .select_city {
     color: #000;
     min-height: 15px;
     padding: 10px 9px;
-    width: 100%;
+    width: 93%;
      border-radius: 3px;
     box-shadow: 2px 3px 10px #ececec inset;
 }
@@ -1391,6 +1391,57 @@ header .select_city {
 }    
 /*end component news list main page*/
 
+/*start component bread-crumbs*/
+.breadcrumb {
+    font-size: 12px;
+    list-style: outside none none;
+    margin: 2em 0 1em;
+    padding: 0;
+}
+.breadcrumb > li > a {
+    color: #000;
+}
+.breadcrumb > li > .divider {
+    padding: 0 8px !important;
+    position: relative !important;
+    width: auto !important;
+}
+.breadcrumb > li > .divider {
+    color: #090;
+    display: inline;
+    padding-left: 2px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 18px;
+}
+.breadcrumb > li > a {
+    color: #000;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+/*end component bread-crumbs*/
+
+/*start component section header*/
+.title1 {
+    color: #009900;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1em 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+.title1 h1 {
+    color: #009900;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1em 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+/*end component section header*/
+
 /*start component catalog-list*/
 .catalog-list-wrapper.list-view .catalog-list-cell{
     height: 286px;
@@ -1563,6 +1614,55 @@ header .select_city {
 }
 .catalog-list-wrapper.table-view .label {
     width: 50px;
+}
+.bar {
+    list-style: outside none none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.catalog-list-wrapper .bar .item.label {
+    margin: 0 20px 0 0;
+}
+.catalog-list-wrapper .bar .item {
+    display: inline;
+    margin-left: 0;
+}
+.bar .item {
+    display: inline-block;
+    margin-right: 1%;
+    outline: medium none !important;
+}
+.catalog-list-wrapper .item {
+    float: left;
+    margin: 0 0 20px 20px;
+    position: relative;
+}
+.catalog-list-wrapper .bar .item {
+    display: inline;
+    margin-left: 0;
+}
+.catalog-list-wrapper .active {
+    position: relative;
+}
+.catalog-list-wrapper .bar .item a {
+    margin: 0 20px;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+.catalog-list-wrapper .bar .item a:hover{
+    border: none;
+}
+.catalog-list-wrapper .bar .item.active a {
+    border: 1px solid #009900;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 10px;
+}
+.bar::after {
+    clear: both;
+    content: "";
+    display: block;
 }
 /*end component catalog-list*/
 
