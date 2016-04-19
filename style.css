@@ -1753,6 +1753,9 @@ header .select_city {
     clear: both;
     display: inline-block;
 }
+.delivery-block {
+    display: none;
+}
 /*end component product detail*/
 
 .pr-block img {
