@@ -1867,12 +1867,13 @@ header .select_city {
 	font-weight: bold;
 	text-align: right;
 	font-size: 12px;
-	margin-left: 2px;
+	margin-left: 3px;
 }
 .rf-span5-1{
 	color: #009900;
 	font-size: 18px;
 	vertical-align: middle;
+	margin-left: 2px;
 }
 .rf-input{
 	border: 1px solid #e3e3e3;
@@ -1913,6 +1914,25 @@ header .select_city {
     margin-top: 9px;
     width: 155px !important;
 	border-radius: 0;
+}
+.rf-span-text{
+	height: 160px;
+	border: 1px solid #e3e3e3;
+	width: 61%;
+	margin-right: 7%;
+	font-family: Arial,Helvetica,sans-serif;
+	box-shadow: 2px 3px 10px #ececec inset;
+	border-radius: 3px;
+	background: #fff none repeat scroll 0 0;
+	resize: none;
+}
+.reviews-form-wrapper{
+	position: none;
+}
+.reviews-form-wrapper:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 /*end reviews-form*/
 
