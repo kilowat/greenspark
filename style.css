@@ -1771,6 +1771,44 @@ header .select_city {
     margin-top: 34px;
 
 }
+
+/*start component city list*/
+.modal-header {
+    border-bottom: 1px solid #eee;
+    padding: 9px 15px;
+    text-decoration: 
+}
+.modal-header h2{
+    text-align: center;
+}
+.modal-footer {
+    background-color: #f5f5f5;
+    border-radius: 0 0 6px 6px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 1px 0 #fff inset;
+    margin-bottom: 0;
+    padding: 14px 15px 15px;
+    text-align: center;
+}
+.city-list {
+    padding-bottom: 20px;
+    padding-top: 20px
+}
+.city-list > ul {
+    display: inline-block;
+    line-height: 1.7em;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.city-list a{
+     border-bottom: 1px solid;
+    font-weight: bold;
+    text-decoration: none;  
+}
+
+/*end component*/
+
 /*start about text styles main page*/
 .fs15{
     font-size: 15px;

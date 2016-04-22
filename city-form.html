@@ -18,8 +18,8 @@
   <script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
   <script type="text/javascript" src="../js/jquery.formstyler.min.js"></script>
   <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
-  <script type="text/javascript" src="../js/jquery.elevateZoom-3.0.8.min.js"></script>
-  <script type="text/javascript" src="../js/slick.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+  <script type="text/javascript" src="../js/js.cookie.js"></script>
   <script type="text/javascript" src="../js/app.js"></script>
 </head>
 
@@ -323,85 +323,42 @@
 
             <!--start component section header--> 
             <div class="title1">
-              <h1>Дисплей для "China Mobile" FPC-S95449L-AAA-1</h1>
+              <h1>Дисплеи</h1>
             </div>
             <!--end component section header-->
 
-            <!--start component product detail-->
-            <div class="product-detail-wrapper">
-              <div class="left-block">
-                <div class="product-image">
-                  <img id="zoom_01" src="../images/product-img.jpg" data-zoom-image="../images/product-img.jpg"/>
-                </div>
+            <!--start city list-->
+            <div class="city-list-wrapper">
+              <div class="modal-header">
+                <h2>Выберите город:</h2>
               </div>
-              <div class="right-block">
-                <div itemtype="http://schema.org/Offer" itemscope="" itemprop="offers" style="box-shadow: 0 4px 7px #666; max-width:350px" class="add-bakset rebrand-block-goods-page">
-                  <meta content="Дисплеи" itemprop="category">
-                  <meta content="RUB" itemprop="priceCurrency">
-                  <meta content="1100" itemprop="price">
-                  <link href="http://schema.org/InStock" itemprop="availability">
-                  <!--  -->
-                  <!--  -->
-                  <form class="styler" action="#">
-                    <div style="margin-bottom: 20px;margin:0;float: none;text-align: center;" class="item price pad10">
-                      <input type="text" style="display:none" size="5" value="1" name="quantity" id="good_count" class="styler count hidden">
-                      <label style="margin: 8px 0 0 0px;float: none;text-align: center;" class="price" for="good_count">1100 <span class="mr0">руб.</span> </label>
-                      <div class="clearfix"></div>
-                      <!-- постоянный клиент?-->
-                      <div class="opt-price-block"> <span class="price opt-price-txt">
-                          <div class="opt-price fs14">оптовая цена:</div>
-                           <div class="opt-price fs22">1050<span class="mr-l5 fs14 valute">руб.</span></div>
-                      </span>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div style="margin:0;margin-top: 10px;display: inline-block;" class="good-count">
-                      <div class="iv1 icon count3"></div>
-                      <div style="text-align: left;font-size:90%" class="label"> - есть
-                        <br>в наличии</div>
-                    </div>
-                </div>
-                <input type="hidden" value="BUY" name="action">
-                <input type="hidden" value="1174" name="id">
-                <div class="deliver"></div>
-                <div style="margin:0" class="item submit"> <a style="width:100%;text-align: center;padding:0;border-top:none;display:none;font-size: 14px;" class="go-personal-order styler" href="/basket/">Перейтив корзину</a>
-                  <input type="submit" value="В корзину" style="width:100%;padding: 6px 0;height: 35px;line-height: 22px;border:;border-radius:0" name="actionADD2BASKET" class=" submit btn btn-success"> </div>
-                </form>
-                <!-- -->
-                <!--  -->
-                <div class="deliver"></div>
-                <!-- О доставке -->
-                <div style="margin:0" class="item submit"> <a style="width:100%;padding: 0;line-height:30px;height:30px;border: none;border-radius: 0;" class="delivery-btn btn btn-grey" href="#">Как получить оптовую цену</a> </div>
-                <div style="margin:0;box-shadow: none;" class="delivery-block">
-                  <div class="deliver"></div>
-                  <div style="padding: 7px;">
-                    <div>Для получения оптовой цены, необходимо зарегистрироваться в розничном магазине как постоянный покупатель.</div>
-                    <div>Совершить за 1 календарный месяц покупок не менее, чем на <b>5000 рублей</b>.</div>
-                    <div>Более подробную информацию можете получить у <a target="_blank" href="/contacts/">сотрудников магазина</a>.</div>
-                  </div>
-                </div>
+              <div class="city-list">
+                <ul>
+                    <li><a href="#" title="#">Воронеж</a></li>
+                    <li><a href="#" title="#">Екатеринбург</a></li>
+                    <li><a href="#" title="#">Казань</a></li>
+                    <li><a href="#" title="#">Липецк</a></li>
+                    <li><a href="#" title="#">Нижний Новгород</a></li>
+                    <li><a href="#" title="#">Новосибирск</a></li>
+                    <li><a href="#" title="#">Омск</a></li>
+                    <li><a href="#" title="#">Пермь</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#" title="#">Ростов-на-Дону</a></li>
+                    <li><a href="#" title="#">Рязань</a></li>
+                    <li><a href="#" title="#">Самара</a></li>
+                    <li><a href="#" title="#">Санкт-Петербург (пр. Энгельса)</a></li>
+                    <li><a href="#" title="#">Санкт-Петербург (ул. Садовая)</a></li>
+                    <li><a href="#" title="#">Санкт-Петербург (ярмарка «Юнона»)</a></li>
+                    <li><a href="#" title="#">Тула</a></li>
+                    <li><a href="#" title="#">Уфа</a></li>
+                  </ul> 
               </div>
-              <!--start share btn-->
-                 <div style="margin-top: 20px;" id="good_share" class="good-share">
-                    <div style="float:left;margin-right: 0.5em;" class="title">Поделиться</div>
-                 </div>
-              <!--end share btn-->
+              <div class="modal-footer">
+                <div>Не нашли нужного города? Сделайте заказ в <a href="" title="">интернет-магазине.</a></div>
               </div>
-                <div class="text">
-                  Запчасти для Apple, предоставленные компанией GreenSpark, полностью соответствуют предъявляемым требованиям качества.<br>
-                  <noindex>Комплектация и цвет товара могут отличаться от заявленного на фото.</noindex>
-                  Обращайтесь за консультацией к нашим специалистам: менеджеры магазина <a target="_blank" title="Контактная информация" href="/contacts/">GreenSpark Воронеж</a> смогут предоставить
-                  вам подробную информацию о той или иной модели и уточнить наличие товара на складе.
-                <br>
-              </div>
-              <a href="/catalog/komplektuyushchie_dlya_remonta/zapchasti_dlya_apple/displei/">Назад в раздел</a>
             </div>
-            <script>
-            $("#zoom_01").elevateZoom();
-            $('.product-detail-wrapper .delivery-btn').click(function(){
-              $('.product-detail-wrapper .delivery-block').slideToggle() ;
-            });
-            </script>
-            <!--end component product detail-->
+            <!--end city list-->
           </main>
           <!-- .content -->
         </div>
