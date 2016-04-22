@@ -1,7 +1,7 @@
 (function($) {
 $(function() {
 
-  $('.search-block select').styler();
+  $('.search-block select, .reviews-form select').styler();
 
 });
 })(jQuery);

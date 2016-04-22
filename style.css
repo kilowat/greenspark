@@ -1809,6 +1809,60 @@ header .select_city {
 
 /*end component*/
 
+/*start reviews-form*/
+.reviews-form {
+	background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+    position: absolute;
+    text-align: center;
+    width: 550px;
+}
+.rf-title{
+	background: rgba(0, 0, 0, 0) url("../images/bg_top_panel.png") repeat scroll 0 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 37px;
+    margin: 0 0 40px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+	width: 100%;
+}
+.rf-tri-top-left{
+	background: rgba(0, 0, 0, 0) url("../images/popup-title-left.png") no-repeat scroll 0 0;
+    height: 47px;
+    left: -12px;
+    position: absolute;
+    top: 0;
+    width: 12px;
+}
+.rf-tri-top-right{
+	background: rgba(0, 0, 0, 0) url("../images/popup-title-right.png") no-repeat scroll 0 0;
+    height: 47px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 12px;
+}
+.rf-close{
+	background: transparent url("../images/gui.png") no-repeat scroll 1px -775px;
+    cursor: pointer;
+    height: 22px;
+    position: absolute;
+    right: 1px;
+    top: 6px;
+    width: 22px;
+}
+.rf-content label{
+	width:150px; display:block; float:left;
+}
+
+/*end reviews-form*/
+
 /*start about text styles main page*/
 .fs15{
     font-size: 15px;
