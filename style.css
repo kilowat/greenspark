@@ -1815,9 +1815,10 @@ header .select_city {
     border-radius: 0;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
     text-align: center;
-    width: 550px;
+    max-width: 550px;
 	color: #3f3f3f;
-	position: absolute;
+	position: relative;
+	padding-bottom: 1px;
 }
 .rf-title{
 	background: rgba(0, 0, 0, 0) url("../images/bg_top_panel.png") repeat scroll 0 0;
@@ -1876,14 +1877,15 @@ header .select_city {
 	margin-left: 2px;
 }
 .rf-input{
-	border: 1px solid #e3e3e3;
-	width: 61%;
-	margin-right: 7%;
-	font-family: Arial,Helvetica,sans-serif;
-	box-shadow: 2px 3px 10px #ececec inset;
-	border-radius: 3px;
 	background: #fff none repeat scroll 0 0;
-	height: 30px;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	box-shadow: 2px 3px 10px #ececec inset;
+	font-family: Arial,Helvetica,sans-serif;
+	height: 15px;
+	margin-right: 3%;
+	padding: 10px;
+	width: 61%;
 }
 .reviews-form .jq-selectbox{
 	text-align: left;
@@ -1916,15 +1918,16 @@ header .select_city {
 	border-radius: 0;
 }
 .rf-span-text{
-	height: 160px;
-	border: 1px solid #e3e3e3;
-	width: 61%;
-	margin-right: 7%;
-	font-family: Arial,Helvetica,sans-serif;
-	box-shadow: 2px 3px 10px #ececec inset;
-	border-radius: 3px;
 	background: #fff none repeat scroll 0 0;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	box-shadow: 2px 3px 10px #ececec inset;
+	font-family: Arial,Helvetica,sans-serif;
+	height: 160px;
+	margin-right: 3%;
+	padding: 10px;
 	resize: none;
+	width: 61%;
 }
 .reviews-form-wrapper{
 	position: none;
@@ -1933,6 +1936,62 @@ header .select_city {
 	content: "";
 	display: block;
 	clear: both;
+}
+.rf-captcha{
+	margin-right: 40px;
+}
+.rf-submit{
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: #090 none repeat scroll 0 0;
+	border-color: #fff -moz-use-text-color -moz-use-text-color;
+	border-image: none;
+	border-style: solid none none;
+	border-width: 1px 0 0;
+	color: #fff;
+	cursor: pointer;
+	height: 36px;
+	line-height: 36px;
+	margin-right: -25%;
+	outline: 0 none;
+	overflow: visible;
+	padding: 0 20px;
+	text-transform: uppercase;
+	width: 65%;
+}
+@media(max-width: 590px){
+	.rf-content label{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.rf-unput{
+		margin-right: 0;
+	}
+	.rf-span-text{
+		margin-right: 0;
+	}
+	.reviews-form .jq-selectbox{
+		margin-right: 0;
+	}
+	.rf-captcha{
+		margin-right: 0;
+	}
+	.rf-submit{
+		margin-right: 0;
+	}
+}
+@media(max-width: 440px){
+	.rf-title{
+		font-size: 12px;
+		text-align: left;
+		padding-left: 52px;
+	}
+	.rf-close{
+		right: 70px;
+	}
 }
 /*end reviews-form*/
 
