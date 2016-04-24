@@ -1809,6 +1809,58 @@ header .select_city {
 
 /*end component*/
 
+/*start component sections list*/
+.sections-list-wrapper .sections-list-cell {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 49%;
+}
+
+.sections-list-wrapper .section-list-cell-wrapper {
+     background: #fff none repeat scroll 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 0 20% 10%;
+    padding: 0 10%;
+    height: 265px;
+    position: relative;
+}
+
+.sections-list-wrapper .sections-list-name {
+    padding-bottom: 30px;
+    padding-top: 30px;
+     font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sections-list-wrapper .sections-list-img img {
+    max-height: 180px;
+}
+
+.sections-list-wrapper .sections-list-item {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 255px;
+    width: 100%;
+    z-index: 300;
+}
+.sections-list-wrapper .sections-list-item a{
+    color: #000;
+}
+.sections-list-wrapper .section-list-cell-wrapper:hover .sections-list-item{
+    display: block;
+}
+/*end component sections list*/
+
 /*start reviews-form*/
 .reviews-form {
 	background: #fff none repeat scroll 0 0;
