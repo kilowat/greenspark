@@ -2047,6 +2047,171 @@ header .select_city {
 }
 /*end reviews-form*/
 
+/*start contacts-form*/
+.contacts-form{
+  color: #3f3f3f;
+  font-size: 14px;
+}
+.contacts-form:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.contacts-form a{
+  line-height: 20px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(60, 167, 51, 0.5);
+}
+.contacts-form a:hover{
+  border-bottom: none;
+}
+.cf-top:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.cf-photo{
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #fff;
+  border-color: #dee0e1 #a3a6a8 #a3a6a8 #d4d9dc;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 1px 1px #bec2c5;
+  margin-bottom: 10px;
+  margin-right: 7%;
+}
+.cf-top-info-wrapper{
+  float: left;
+  width: 100%;
+}
+.cf-top-info{
+  min-height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.cf-top-img{
+  float: left;
+}
+.cf-top-info-title{
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 8px;
+}
+.cf-top-info-mag{
+  padding: 10px 8px 10px 8px;
+}
+.cf-top-info-mag p{
+  margin: 0 0 10px;
+  padding: 0;
+}
+.cf-top-info-mag span{
+  font-weight: bold
+}
+.cf-feedback-form{
+  max-width: 577px;
+}
+.cf-fb-title{
+  text-transform: uppercase;
+  padding: 13px 0;
+  font-weight: normal;
+  font-size: 14pt;
+}
+.cf-fb-title span{
+  color: #2da310;
+}
+.form-body form:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.form-body-right{
+  float: left;
+  width: 70%;
+}
+.form-body-left{
+  float: left;
+  margin-right: 4%;
+  width: 25%;
+}
+.form-body{
+  background: #e2e2e2 none repeat scroll 0 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.35);
+  padding: 10px 15px;
+}
+.form-body-left input{
+  border: medium none;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.55);
+  box-sizing: border-box;
+  margin: 4px 0;
+  padding: 5px;
+  width: 100%;
+}
+.ff-captcha img{
+  box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.55);
+  margin: 4px 0 0;
+  padding: 0;
+  border: 0 none;
+  max-width: 100%;
+  height: auto;
+}
+.ff-message textarea{
+  border: medium none;
+  border-radius: 1px;
+  box-shadow: none;
+  box-sizing: border-box;
+  height: 124px;
+  margin: 4px 0 0;
+  padding: 5px;
+  resize: none;
+  width: 100%;
+  vertical-align: top;
+  font-size: 100%;
+}
+.ff-submit{
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 2px 2px -1px rgba(50, 50, 50, 0.55);
+  height: 43px;
+}
+.ff-submit-botton{
+  background: #38a71d none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.55);
+  color: #ffffff;
+  float: right;
+  height: auto;
+  line-height: 1;
+  margin: 10px;
+  padding: 6px;
+  width: 110px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media(min-width: 1350px){
+  .cf-top-info-wrapper{
+    width: 50%;
+  }
+  .cf-top-img{
+    width: 46%;
+    margin-right: 3%;
+  }
+  .cf-photo{
+    width: 100%;
+  }
+}
+/*end contacts-form*/
+
 /*start about text styles main page*/
 .fs15{
     font-size: 15px;
