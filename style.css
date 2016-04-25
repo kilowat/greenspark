@@ -1809,14 +1809,68 @@ header .select_city {
 
 /*end component*/
 
+/*start component sections list*/
+.sections-list-wrapper .sections-list-cell {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 49%;
+}
+
+.sections-list-wrapper .section-list-cell-wrapper {
+     background: #fff none repeat scroll 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 0 20% 10%;
+    padding: 0 10%;
+    height: 265px;
+    position: relative;
+}
+
+.sections-list-wrapper .sections-list-name {
+    padding-bottom: 30px;
+    padding-top: 30px;
+     font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sections-list-wrapper .sections-list-img img {
+    max-height: 180px;
+}
+
+.sections-list-wrapper .sections-list-item {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 255px;
+    width: 100%;
+    z-index: 300;
+}
+.sections-list-wrapper .sections-list-item a{
+    color: #000;
+}
+.sections-list-wrapper .section-list-cell-wrapper:hover .sections-list-item{
+    display: block;
+}
+/*end component sections list*/
+
 /*start reviews-form*/
 .reviews-form {
 	background: #fff none repeat scroll 0 0;
     border-radius: 0;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
-    position: absolute;
     text-align: center;
-    width: 550px;
+    max-width: 550px;
+	color: #3f3f3f;
+	position: relative;
+	padding-bottom: 1px;
 }
 .rf-title{
 	background: rgba(0, 0, 0, 0) url("../images/bg_top_panel.png") repeat scroll 0 0;
@@ -1826,7 +1880,6 @@ header .select_city {
     line-height: 37px;
     margin: 0 0 40px;
     padding: 0;
-    position: relative;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
@@ -1858,9 +1911,140 @@ header .select_city {
     width: 22px;
 }
 .rf-content label{
-	width:150px; display:block; float:left;
+	width:150px; 
+	display:block; 
+	float:left;
+	margin-top: 7px;
 }
-
+.rf-span5{
+	font-weight: bold;
+	text-align: right;
+	font-size: 12px;
+	margin-left: 3px;
+}
+.rf-span5-1{
+	color: #009900;
+	font-size: 18px;
+	vertical-align: middle;
+	margin-left: 2px;
+}
+.rf-input{
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	box-shadow: 2px 3px 10px #ececec inset;
+	font-family: Arial,Helvetica,sans-serif;
+	height: 15px;
+	margin-right: 3%;
+	padding: 10px;
+	width: 61%;
+}
+.reviews-form .jq-selectbox{
+	text-align: left;
+	vertical-align: middle;
+	margin-right: 40%;
+	background: #dce7e3;
+	width: 100px;
+	height: 29px;
+	padding: 7px 45px 0 10px;
+	border-top: 1px solid #fff;
+	
+}
+.reviews-form .jq-selectbox__trigger{
+	border-left: none;
+}
+.reviews-form .jq-selectbox__select:hover{
+	background: #dce7e3;
+}
+.reviews-form  .jq-selectbox__trigger{
+	right: -45px;
+    top: -6px;
+}
+.reviews-form .jq-selectbox__select-text{
+	padding: 0 5px;
+}
+.reviews-form .jq-selectbox__dropdown{
+	left: 0;
+    margin-top: 9px;
+    width: 155px !important;
+	border-radius: 0;
+}
+.rf-span-text{
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	box-shadow: 2px 3px 10px #ececec inset;
+	font-family: Arial,Helvetica,sans-serif;
+	height: 160px;
+	margin-right: 3%;
+	padding: 10px;
+	resize: none;
+	width: 61%;
+}
+.reviews-form-wrapper{
+	position: none;
+}
+.reviews-form-wrapper:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.rf-captcha{
+	margin-right: 40px;
+}
+.rf-submit{
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: #090 none repeat scroll 0 0;
+	border-color: #fff -moz-use-text-color -moz-use-text-color;
+	border-image: none;
+	border-style: solid none none;
+	border-width: 1px 0 0;
+	color: #fff;
+	cursor: pointer;
+	height: 36px;
+	line-height: 36px;
+	margin-right: -25%;
+	outline: 0 none;
+	overflow: visible;
+	padding: 0 20px;
+	text-transform: uppercase;
+	width: 65%;
+}
+@media(max-width: 590px){
+	.rf-content label{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.rf-unput{
+		margin-right: 0;
+	}
+	.rf-span-text{
+		margin-right: 0;
+	}
+	.reviews-form .jq-selectbox{
+		margin-right: 0;
+	}
+	.rf-captcha{
+		margin-right: 0;
+	}
+	.rf-submit{
+		margin-right: 3%;
+	}
+}
+@media(max-width: 440px){
+	.rf-title{
+		font-size: 12px;
+		text-align: left;
+		padding-left: 52px;
+	}
+	.rf-close{
+		right: 70px;
+	}
+}
 /*end reviews-form*/
 
 /*start about text styles main page*/

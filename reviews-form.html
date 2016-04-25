@@ -328,20 +328,19 @@
             <!--end component section header-->
 
             <!--start reviews form-->
-            <div class="reviews-form">
+            <div class="reviews-form">	
 				<div class="rf-title">отзывы и предложения</div>
 				<div class="rf-tri-top-left"></div>
 				<div class="rf-tri-top-right"></div>
 				<div class="rf-content">
 					<form method="post" name="feviews-form-add">
 						<p>
-							<label class="rf-span5">Ф.И.О.<span class="rf-span5-1">*</span></label>
-							<input type="text" value="" size="25" name="" class="rf-input">
+							<label class="rf-span5">Ф.И.О.:<span class="rf-span5-1">*</span></label>
+							<input type="text" value="" size="25" name="fio" class="rf-input" />
 						</p>
 						<p>
-							<label class="rf-span1">Тип обращения<span class="rf-span1-1">*</span></label>
+							<label class="rf-span5">Тип обращения<span class="rf-span5-1">*</span></label>
 							<select >
-								<option>(не установлено)</option>
 								<option>(не установлено)</option>
 								<option>Вопрос</option>
 								<option>Благодарность</option>
@@ -350,38 +349,30 @@
 							</select>
 						</p>
 						<p>
-							<label class="rf-span1">E-mail.<span class="rf-span1-1">*</span></label>
-							<input type="text" value="" size="25" name="" class="rf-input">
+							<label class="rf-span5">E-mail<span class="rf-span5-1">*</span></label>
+							<input type="text" value="" size="25" name="e-mail" class="rf-input" />
 						</p>
 						<p>
-							<label class="rf-span1">Номер телефона<span class="rf-span1-1">*</span></label>
-							<input type="text" value="" size="25" name="" class="rf-input">
+							<label class="rf-span5">Номер телефона</label>
+							<input type="text" value="" size="25" name="phone" class="rf-input">
 						</p>
 						<p>
-							<label class="rf-span1">Текст обращения<span class="rf-span1-1">*</span></label>
-							<textarea name="" rows="1" cols=""></textarea>
+							<label class="rf-span5">Текст обращения<span class="rf-span5-1">*</span></label>
+							<textarea name="message" rows="1" class="rf-span-text"></textarea>
 						</p>
 						<p>
-							<img src="../images/captcha.php.jpg">
+							<img src="../images/captcha.php.jpg" class="rf-captcha" alt="captcha">
 						</p>
 						<p>
-							<label class="rf-span1">Код с картинки<span class="rf-span1-1">*</span></label>
-							<input type="text" value="" size="25" name="" class="rf-input">
+							<label class="rf-span5">Код с картинки<span class="rf-span5-1">*</span></label>
+							<input type="text" value="" size="25" name="captcha" class="rf-input">
 						</p>
 						<p>
-							<input class="rf-submit" type="submit" name="" value="Отправить">
+							<input class="rf-submit" type="submit" name="submit" value="Отправить">
 						</p>
 					</form>
 				</div>
 				<div class="rf-close"></div>
-				<!--<select >
-					<option>-- Выберите --</option>
-					<option>Пункт 1</option>
-					<option>Пункт 2</option>
-					<option disabled>Пункт 3</option>
-					<option>Пункт 4</option>
-					<option>Пункт 5</option>
-				</select>!-->
             </div>
             <!--end reviews fomr-->
           </main>
