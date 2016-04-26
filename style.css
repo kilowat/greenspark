@@ -2257,6 +2257,7 @@ header .select_city {
 }
 .cf-map img{
   width: 100%;
+  margin-bottom: -5px;
 }
 .cf-map{
   overflow: hidden;
