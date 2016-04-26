@@ -2116,6 +2116,7 @@ header .select_city {
 }
 .cf-feedback-form{
   max-width: 577px;
+  margin-bottom: 20px;
 }
 .cf-fb-title{
   text-transform: uppercase;
@@ -2197,7 +2198,70 @@ header .select_city {
   text-transform: uppercase;
   font-weight: bold;
 }
-
+.cf-bottom-top{
+  margin-bottom: 20px;
+}
+.cf-slaider .slick-prev{
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border-color: transparent #dce7e3 transparent transparent;
+  border-style: solid;
+  border-width: 40px 25px 40px 0;
+  color: transparent !important;
+  height: 0;
+  left: -45px;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+.cf-slaider .slick-next {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border-color: transparent transparent transparent #dce7e3;
+  border-style: solid;
+  border-width: 40px 0 40px 25px;
+  color: transparent !important;
+  height: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  width: 0;
+}
+.cf-slaider .slick-slider{
+  margin: 0 59px 0;
+}
+.cf-slaider .cf-photo img{
+  width: 100%;
+}
+.cf-slaider .cf-photo{
+  box-shadow: 2px 2px 4px 0 rgba(50, 50, 50, 0.45), 0 0 3px 0 rgba(50, 50, 50, 0.25);
+}
+.cf-slaider .slick-slide{
+  padding-bottom: 10px;
+  margin-left: 0.5%;
+}
+.cf-slaider  .cf-name p{
+  font-weight: bold;
+  font-size: 14px;
+}
+.cf-slaider  .cf-name span{
+  font-size: 13px;
+}
+.cf-slaider .cf-contacts{
+  font-size: 14px;
+}
+.cf-slaider .slick-initialized .slick-slide{
+  cursor: grab;
+}
+.cf-map img{
+  width: 100%;
+}
+.cf-map{
+  height: 400px;
+  overflow: hidden;
+}
 @media(min-width: 1350px){
   .cf-top-info-wrapper{
     width: 50%;
@@ -2209,6 +2273,13 @@ header .select_city {
   .cf-photo{
     width: 100%;
   }
+}
+@media(max-width: 460px){
+  .form-body-left, .form-body-right{
+    float: none;
+    width: 100%;
+  }
+
 }
 /*end contacts-form*/
 
