@@ -2085,6 +2085,7 @@ header .select_city {
   box-shadow: 1px 1px 1px #bec2c5;
   margin-bottom: 10px;
   margin-right: 7%;
+  width: 100%;
 }
 .cf-top-info-wrapper{
   float: left;
