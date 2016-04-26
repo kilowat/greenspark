@@ -2259,7 +2259,6 @@ header .select_city {
   width: 100%;
 }
 .cf-map{
-  height: 400px;
   overflow: hidden;
 }
 @media(min-width: 1350px){
