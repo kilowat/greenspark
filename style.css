@@ -2051,6 +2051,7 @@ header .select_city {
 .contacts-form{
   color: #3f3f3f;
   font-size: 14px;
+  margin: 0 0.5%;
 }
 .contacts-form:after{
   content: "";
